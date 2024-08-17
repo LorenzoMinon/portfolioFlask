@@ -3,9 +3,11 @@
 {% block title %}Inicio{% endblock %}
 
 {% block content %}
-    <section id="bienvenida">
-        <h1>Bienvenido a mi Portfolio</h1>
-        <p>Soy un desarrollador web especializado en HTML, CSS, JavaScript, y Python.</p>
-        <p><a href="{{ url_for('sobre_mi') }}">Conoce más sobre mí</a></p>
-    </section>
+<section id="bienvenida" class="text-center mt-10">
+    <h1 class="text-5xl font-bold text-blue-500">¡Hola, soy Lorenzo Miñón!</h1>
+    <p class="text-xl text-gray-400 mt-4">Estudiante avanzado en Ingeniería en Sistemas, enfocado en Inteligencia Artificial y desarrollo en Python.</p>
+    <img src="https://media.licdn.com/dms/image/D4D03AQGKyYSU7uMvaA/profile-displayphoto-shrink_200_200/0/1676760558852?e=1729123200&v=beta&t=NkoDAh132yUtvKSNjXdZJ2uuaC_kzyjYpLMFJy3MNng" alt="Foto de Lorenzo Miñón" class="rounded-full mx-auto mt-10" style="width: 200px; height: 200px;">
+    <p class="text-lg mt-6 text-blue-300">Explora mis proyectos y habilidades más abajo.</p>
+    <a href="{{ url_for('proyectos') }}" class="text-blue-500 mt-8 inline-block text-lg">Ver Proyectos Destacados</a>
+</section>
 {% endblock %}

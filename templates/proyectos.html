@@ -3,12 +3,23 @@
 {% block title %}Proyectos{% endblock %}
 
 {% block content %}
-    <section id="proyectos">
-        <h1>Mis Proyectos</h1>
-        <ul>
-            <li><a href="{{ url_for('proyecto_detalle', proyecto_id=1) }}">Proyecto 1</a></li>
-            <li><a href="{{ url_for('proyecto_detalle', proyecto_id=2) }}">Proyecto 2</a></li>
-            <li><a href="{{ url_for('proyecto_detalle', proyecto_id=3) }}">Proyecto 3</a></li>
-        </ul>
-    </section>
+<section id="proyectos" class="text-center mt-10">
+    <h1 class="text-4xl font-bold text-blue-500">Mis Proyectos</h1>
+    <div class="grid grid-cols-3 gap-8 mt-10">
+        <!-- Proyecto de Python/IA -->
+        <div class="text-center">
+            <img src="{{ url_for('static', filename='img/python.png') }}" alt="Proyecto Python" class="mx-auto" style="width: 100%;">
+            <h2 class="text-2xl mt-4">Proyecto de IA con Python</h2>
+            <p class="text-gray-400">Análisis de datos y predicciones usando Python, TensorFlow y Pandas.</p>
+            <a href="{{ url_for('proyecto_detalle', proyecto_id=1) }}" class="text-blue-500 mt-4 block">Ver más</a>
+        </div>
+        <!-- Proyecto de .NET/SQL Server -->
+        <div class="text-center">
+            <img src="{{ url_for('static', filename='img/csharp.png') }}" alt="Proyecto .NET" class="mx-auto" style="width: 100%;">
+            <h2 class="text-2xl mt-4">Sistema de Ventas con .NET</h2>
+            <p class="text-gray-400">Sistema de control de ventas y stock usando .NET y SQL Server.</p>
+            <a href="{{ url_for('proyecto_detalle', proyecto_id=2) }}" class="text-blue-500 mt-4 block">Ver más</a>
+        </div>
+    </div>
+</section>
 {% endblock %}

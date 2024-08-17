@@ -1,11 +1,12 @@
 {% extends "base.html" %}
 
-{% block title %}Detalle del Proyecto{% endblock %}
+{% block title %}Detalle del Proyecto {% endblock %}
 
 {% block content %}
-    <section id="proyecto-detalle">
-        <h1>Detalle del Proyecto {{ proyecto_id }}</h1>
-        <p>Aquí puedes agregar una descripción detallada del proyecto, las tecnologías usadas, retos, y el resultado final.</p>
-        <p><a href="{{ url_for('proyectos') }}">Volver a Proyectos</a></p>
-    </section>
+<section id="proyecto-detalle" class="text-center mt-10">
+    <h1 class="text-4xl font-bold text-blue-500">Detalle del Proyecto {{ proyecto_id }}</h1>
+    <p class="text-xl text-gray-400 mt-4">Explicación detallada del proyecto, cómo fue desarrollado, las tecnologías utilizadas y los desafíos enfrentados.</p>
+    <img src="{{ url_for('static', filename='img/proyecto_detalle.jpg') }}" alt="Detalle del Proyecto" class="mx-auto mt-10" style="width: 100%;">
+    <p class="mt-4 text-blue-500"><a href="{{ url_for('proyectos') }}">Volver a Proyectos</a></p>
+</section>
 {% endblock %}
