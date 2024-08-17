@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+    <section id="bienvenida">
+        <h1>Bienvenido a mi Portfolio</h1>
+        <p>Soy un desarrollador web especializado en HTML, CSS, JavaScript, y Python.</p>
+        <p><a href="{{ url_for('sobre_mi') }}">Conoce más sobre mí</a></p>
+    </section>
+{% endblock %}
