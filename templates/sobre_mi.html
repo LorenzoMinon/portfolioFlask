@@ -3,25 +3,42 @@
 {% block title %}Sobre mí{% endblock %}
 
 {% block content %}
-<section id="sobre-mi" class="text-center mt-10">
-    <h1 class="text-4xl font-bold text-blue-500">Sobre mí</h1>
-    <p class="text-xl text-gray-400 mt-4">
-        Soy un desarrollador con experiencia en .NET y SQL Server, actualmente enfocándome en Inteligencia Artificial y Python. 
-        He trabajado en infraestructura IT y estoy en constante aprendizaje para mejorar mis habilidades en el desarrollo de soluciones innovadoras.
-    </p>
-    <h2 class="text-3xl font-bold text-blue-500 mt-10">Educación</h2>
-    <p class="text-lg text-gray-400 mt-4">
-        <strong>Ingeniería en Sistemas</strong> - UAI - Universidad Abierta Interamericana (2021 - 2025)
-    </p>
-    <p class="text-lg text-gray-400 mt-2">
-        Cursos adicionales en IA, Python, y herramientas de análisis de datos.
-    </p>
-    <h2 class="text-3xl font-bold text-blue-500 mt-10">Experiencia</h2>
-    <p class="text-lg text-gray-400 mt-4">
-        <strong>Infraestructura IT</strong> en Avalian (2021 - 2023)
-    </p>
-    <p class="text-lg text-gray-400 mt-2">
-        Trabajé con tecnologías de Cisco, Fortinet y desarrollé habilidades avanzadas en .NET y SQL Server.
-    </p>
+<section id="sobre-mi" class="mt-10">
+    <!-- Título principal -->
+    <div class="text-center">
+        <h1 class="text-4xl font-bold text-blue-500">Sobre mí</h1>
+        <p class="text-xl text-gray-400 mt-4 max-w-2xl mx-auto text-justify">
+            Soy un desarrollador con experiencia en infraestructura IT y tecnologías como .NET y SQL Server.
+            Actualmente me estoy capacitando en Inteligencia Artificial y Python para desarrollar soluciones innovadoras.
+        </p>
+    </div>
+
+    <!-- Sección Experiencia Profesional -->
+    <div class="mt-16">
+        <h2 class="text-3xl font-bold text-blue-500">Experiencia Profesional</h2>
+        <p class="text-lg text-gray-400 mt-4">
+            <strong>Soporte IT - Infraestructura IT</strong> en Avalian (2021 - 2023)
+        </p>
+        <ul class="text-lg text-gray-400 mt-2 list-disc list-inside">
+            <li>Configuración y soporte de equipos de red utilizando tecnologías Cisco y Fortinet.</li>
+            <li>Soporte técnico de nivel 1, resolución de problemas de hardware y software.</li>
+            <li>Monitoreo y mantenimiento de la infraestructura de TI.</li>
+        </ul>
+    </div>
+
+    <!-- Sección Proyectos Académicos y Personales -->
+    <div class="mt-16">
+        <h2 class="text-3xl font-bold text-blue-500">Proyectos Académicos y Personales</h2>
+        <p class="text-lg text-gray-400 mt-4">
+            He desarrollado varios proyectos en el contexto de mi carrera de Ingeniería en Sistemas y en mi tiempo libre, 
+            enfocándome en el desarrollo con .NET, SQL Server y Python. Estos proyectos me han permitido aplicar y consolidar 
+            mis conocimientos en desarrollo de software.
+        </p>
+        <ul class="text-lg text-gray-400 mt-4 list-disc list-inside">
+            <li><strong>Sistema de Gestión de Ventas</strong> - Desarrollo de un sistema de control de ventas utilizando .NET Framework y SQL Server.</li>
+            <li><strong>Análisis de Datos con Python</strong> - Implementación de un proyecto de análisis y predicción utilizando Python, Pandas, y Scikit-learn.</li>
+            <li><strong>API RESTful en .NET Core</strong> - Desarrollo de una API para la gestión de datos, integrando SQL Server como base de datos relacional.</li>
+        </ul>
+    </div>
 </section>
 {% endblock %}

@@ -10,10 +10,6 @@ def inicio():
 def sobre_mi():
     return render_template('sobre_mi.html')
 
-@app.route('/tecnologias')
-def tecnologias():
-    return render_template('tecnologias.html')
-
 @app.route('/proyectos')
 def proyectos():
     return render_template('proyectos.html')

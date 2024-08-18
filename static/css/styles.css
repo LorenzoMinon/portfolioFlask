@@ -34,6 +34,9 @@ header nav ul li a {
 /* Títulos */
 h1, h2, h3 {
     color: #00bfff; /* Acentos en azul claro */
+    margin-top: 2rem; /* Asegura un espacio superior uniforme */
+    margin-bottom: 1rem; /* Asegura un espacio inferior uniforme */
+    text-align: center; /* Centra todos los títulos */
 }
 
 /* Enlaces al pasar el ratón */
@@ -47,13 +50,80 @@ section {
     text-align: center;
 }
 
+/* Flexbox para las secciones en columnas */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.md\:w-1\/2 {
+    width: 50%;
+}
+
+.p-4 {
+    padding: 1rem;
+}
+
+/* Justificar el texto */
+.text-justify {
+    text-align: justify;
+}
+
+/* Color y tamaño del texto */
+p {
+    font-size: 1.125rem; /* Tamaño de fuente uniforme */
+    line-height: 1.6; /* Altura de línea para asegurar espacio entre líneas */
+    font-weight: 400; /* Grosor uniforme del texto */
+    color: #ffffff; /* Color del texto */
+    margin-bottom: 1.5rem; /* Espaciado uniforme entre párrafos */
+}
+
+/* Márgenes superiores */
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.mt-10 {
+    margin-top: 2.5rem;
+}
+
+.mt-16 {
+    margin-top: 4rem;
+}
+
+/* Estilo de las imágenes y iconos */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados para las imágenes */
+}
+
+/* Listas con viñetas */
+ul.list-disc {
+    list-style-type: disc;
+    padding-left: 1.5rem; /* Añadir espacio a la izquierda de las viñetas */
+    margin-bottom: 1.5rem; /* Espaciado uniforme debajo de las listas */
+}
+
+.list-inside {
+    list-style-position: inside;
+}
+
 /* Pie de página */
 footer {
     background-color: #1f1f1f; /* Pie de página en gris oscuro */
     color: #ffffff; /* Texto en blanco */
     text-align: center;
     padding: 1rem;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
 }

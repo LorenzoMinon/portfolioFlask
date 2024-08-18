@@ -3,11 +3,61 @@
 {% block title %}Inicio{% endblock %}
 
 {% block content %}
-<section id="bienvenida" class="text-center mt-10">
+<section id="presentacion" class="text-center mt-10">
     <h1 class="text-5xl font-bold text-blue-500">¡Hola, soy Lorenzo Miñón!</h1>
-    <p class="text-xl text-gray-400 mt-4">Estudiante avanzado en Ingeniería en Sistemas, enfocado en Inteligencia Artificial y desarrollo en Python.</p>
-    <img src="https://media.licdn.com/dms/image/D4D03AQGKyYSU7uMvaA/profile-displayphoto-shrink_200_200/0/1676760558852?e=1729123200&v=beta&t=NkoDAh132yUtvKSNjXdZJ2uuaC_kzyjYpLMFJy3MNng" alt="Foto de Lorenzo Miñón" class="rounded-full mx-auto mt-10" style="width: 200px; height: 200px;">
-    <p class="text-lg mt-6 text-blue-300">Explora mis proyectos y habilidades más abajo.</p>
-    <a href="{{ url_for('proyectos') }}" class="text-blue-500 mt-8 inline-block text-lg">Ver Proyectos Destacados</a>
+    <p class="text-xl text-gray-400 mt-4">
+        Estudiante avanzado en Ingeniería en Sistemas, con experiencia en infraestructura IT, 
+        desarrollo en .NET y SQL Server, y en transición hacia Inteligencia Artificial y Python.
+    </p>
+    <img src= https://media.licdn.com/dms/image/D4D03AQGKyYSU7uMvaA/profile-displayphoto-shrink_200_200/0/1676760558852?e=1729123200&v=beta&t=NkoDAh132yUtvKSNjXdZJ2uuaC_kzyjYpLMFJy3MNng alt="Lorenzo Miñón" class="mx-auto mt-8 rounded-full" style="width: 200px;">
+</section>
+
+<!-- Nueva Sección de Tecnologías -->
+<section id="tecnologias" class="text-center mt-16">
+    <h2 class="text-4xl font-bold text-blue-500">Tecnologías que manejo</h2>
+    <p class="text-lg text-gray-400 mt-4 max-w-2xl mx-auto">
+        Estas son las tecnologías y herramientas con las que trabajo regularmente:
+    </p>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 mt-10">
+        <!-- Icono y tecnología 1 -->
+        <div class="tech-item text-center">
+            <img src="https://img.icons8.com/color/144/python--v1.png" alt="Python" class="mx-auto" style="width: 80px;">
+            <p class="mt-2 text-xl">Python</p>
+        </div>
+        <!-- Icono y tecnología 2 -->
+        <div class="tech-item text-center">
+            <img src="https://img.icons8.com/color/144/net-framework.png" alt=".NET Framework" class="mx-auto" style="width: 80px;">
+            <p class="mt-2 text-xl">.NET Framework</p>
+        </div>
+        <!-- Icono y tecnología 3 -->
+        <div class="tech-item text-center">
+            <img src="https://img.icons8.com/cute-clipart/144/flask.png" alt="Flask" class="mx-auto" style="width: 80px;">
+            <p class="mt-2 text-xl">Flask</p>
+        </div>
+        <!-- Icono y tecnología 4 -->
+        <div class="tech-item text-center">
+            <img src="https://img.icons8.com/color/48/tensorflow.png" alt="TensorFlow" class="mx-auto" style="width: 80px;">
+            <p class="mt-2 text-xl">TensorFlow</p>
+        </div>
+        <div class="tech-item text-center">
+            <img src="https://img.icons8.com/dusk/144/power-bi.png" alt="Power Bi" class="mx-auto" style="width: 80px;">
+            <p class="mt-2 text-xl">Power BI</p>
+        </div>
+        <div class="tech-item text-center">
+            <img src="https://img.icons8.com/color/144/mongodb.png" alt="Mongo" class="mx-auto" style="width: 80px;">
+            <p class="mt-2 text-xl">MongoDB</p>
+        </div>
+        <div class="tech-item text-center">
+            <img src="https://img.icons8.com/color/144/microsoft-sql-server.png" alt="microsoft-sql-server" class="mx-auto" style="width: 80px;">
+            <p class="mt-2 text-xl">SQL Server</p>
+        </div>
+        <div class="tech-item text-center">
+            <img src="https://img.icons8.com/color/144/typescript.png" alt="Typescript" class="mx-auto" style="width: 80px;">
+            <p class="mt-2 text-xl"> Typescript</p>
+        </div>
+        
+        <!-- Añade más tecnologías según sea necesario -->
+    </div>
 </section>
 {% endblock %}
