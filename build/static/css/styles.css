@@ -1,0 +1,144 @@
+/* Fondo y texto */
+body {
+    background-color: #121212; /* Fondo oscuro */
+    color: #ffffff; /* Texto en blanco */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #1f1f1f; /* Encabezado en gris oscuro */
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Navegación */
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #00bfff; /* Texto en azul claro */
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    color: #00bfff; /* Acentos en azul claro */
+    margin-top: 2rem; /* Asegura un espacio superior uniforme */
+    margin-bottom: 1rem; /* Asegura un espacio inferior uniforme */
+    text-align: center; /* Centra todos los títulos */
+}
+
+/* Enlaces al pasar el ratón */
+a:hover {
+    color: #1e90ff; /* Acento en un tono más claro de azul */
+}
+
+/* Secciones */
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Flexbox para las secciones en columnas */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.md\:w-1\/2 {
+    width: 50%;
+}
+
+.p-4 {
+    padding: 1rem;
+}
+
+/* Justificar el texto */
+.text-justify {
+    text-align: justify;
+}
+
+/* Color y tamaño del texto */
+p {
+    font-size: 1.125rem; /* Tamaño de fuente uniforme */
+    line-height: 1.6; /* Altura de línea para asegurar espacio entre líneas */
+    font-weight: 400; /* Grosor uniforme del texto */
+    color: #ffffff; /* Color del texto */
+    margin-bottom: 1.5rem; /* Espaciado uniforme entre párrafos */
+}
+
+/* Márgenes superiores */
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.mt-10 {
+    margin-top: 2.5rem;
+}
+
+.mt-16 {
+    margin-top: 4rem;
+}
+
+/* Estilo de las imágenes y iconos */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados para las imágenes */
+}
+
+/* Listas con viñetas */
+ul.list-disc {
+    list-style-type: disc;
+    padding-left: 1.5rem; /* Añadir espacio a la izquierda de las viñetas */
+    margin-bottom: 1.5rem; /* Espaciado uniforme debajo de las listas */
+}
+
+.list-inside {
+    list-style-position: inside;
+}
+
+/* Pie de página */
+footer {
+    background-color: #1f1f1f; /* Pie de página en gris oscuro */
+    color: #ffffff; /* Texto en blanco */
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Tooltips */
+.tooltip {
+    background-color: #333; /* Fondo del tooltip */
+    color: #ffffff; /* Texto del tooltip */
+    padding: 5px;
+    border-radius: 3px;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 10;
+    font-size: 0.875rem;
+}
